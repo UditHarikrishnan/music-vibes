@@ -1,0 +1,2241 @@
+/* Udit harikrishnan-homepage*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8e8ff, #f0f9ff);
+    margin: 0;
+    color: #111;
+}
+
+
+
+
+.header-top {
+    width: 100%;
+    height: 260px;
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid black;
+}
+
+.header-top::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.header-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-bottom: 8px;
+}
+
+.header-top h1 {
+    margin: 0;
+    font-size: 44px;
+}
+
+.header-top p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+
+
+.intro {
+    max-width: 950px;
+    margin: 30px auto 20px auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 18px 20px;
+    border-radius: 14px;
+    color: #1f2933;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.info-box h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.intro-pic img {
+    max-width: 260px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+}
+
+
+
+.nav {
+    background: white;
+    padding: 12px 20px 16px 20px;
+    margin-top: 22px;
+}
+
+.nav-center {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.nav h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 3px 2px 5px 2px;
+    transition: 0.15s;
+}
+
+.nav a:hover {
+    color: #2563eb;
+}
+
+.nav a.active {
+    border-bottom: 2px solid blue;
+}
+
+
+
+.genres {
+    width: 90%;
+    max-width: 950px;
+    margin: 30px auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.genre-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: 0.18s ease;
+}
+
+.genre-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.genre-body {
+    padding: 12px 14px 16px 14px;
+    text-align: center;
+}
+
+.genre-body h4 {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+}
+
+.genre-body p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.learn-more {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #111;
+    color: #111;
+    transition: 0.15s;
+}
+
+.learn-more:hover {
+    background: #111;
+    color: #fff;
+}
+
+.genre-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.genre-card.rap { border-left: 4px solid red; }
+.genre-card.pop { border-left: 4px solid orange; }
+.genre-card.rnb { border-left: 4px solid purple; }
+.genre-card.jazz { border-left: 4px solid green; }
+.genre-card.classical { border-left: 4px solid blue; }
+
+
+
+.footer {
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-pic img {
+        max-width: 80%;
+    }
+
+    .header-top h1 {
+        font-size: 34px;
+    }
+}
+
+
+/*udit harikrishnan-rap pages*/
+
+.rap-page {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: radial-gradient(circle at top, #111827 0%, #0f172a 40%, #000000 100%);
+    color: #f1f5f9;
+}
+
+
+.rap-header {
+    background-image: url("images/rapheader.jpg") !important;
+}
+
+
+.rap-page .header-inner {
+    text-shadow: 0 3px 10px rgba(0,0,0,0.65);
+}
+
+
+.rap-page .nav-center {
+    background: rgba(15,23,42,0.85);
+    border: 1px solid rgba(148,163,184,0.35);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.rap-page .nav a {
+    color: #e2e8f0;
+}
+
+.rap-page .nav a:hover {
+    color: #a5b4fc;
+}
+
+.rap-page .nav a.active {
+    border-bottom: 2px solid #a855f7;
+}
+
+
+.rap-intro {
+    max-width: 950px;
+    margin: 28px auto 22px auto;
+    padding: 22px 24px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #4c1d95, #312e81, #1e1b4b);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.55);
+    border: 1px solid rgba(167,139,250,0.4);
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 24px;
+}
+
+.rap-intro h2 {
+    margin: 4px 0 10px 0;
+    font-size: 26px;
+    color: #fdf4ff;
+}
+
+.rap-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e9d5ff;
+}
+
+.rap-intro-points h3 {
+    font-size: 18px;
+    color: #f0abfc;
+    margin-bottom: 10px;
+}
+
+.rap-intro-points ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rap-intro-points li {
+    margin-bottom: 8px;
+    color: #e9d5ff;
+    position: relative;
+    padding-left: 20px;
+}
+
+.rap-intro-points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #fb923c, #a855f7);
+}
+
+
+.rapper-nav {
+    max-width: 950px;
+    margin: 26px auto 40px auto;
+    background: rgba(15,23,42,0.85);
+    padding: 20px 22px 24px 22px;
+    border-radius: 18px;
+    border: 1px solid rgba(148,163,184,0.4);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.7);
+}
+
+.rapper-nav h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #e2e8f0;
+}
+
+.rapper-sub {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+    margin: 6px 0 18px 0;
+}
+
+.rapper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+.rapper-card {
+    text-decoration: none;
+    color: white;
+    background: radial-gradient(circle at top, #1e293b, #0f172a);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(71,85,105,0.6);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.65);
+    transition: 0.18s ease;
+}
+
+.rapper-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.rapper-card-body {
+    padding: 12px 14px;
+    text-align: center;
+}
+
+.rapper-card-body h3 {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    color: #f1f5f9;
+}
+
+.rapper-card-body p {
+    margin: 0;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.rapper-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.9);
+    border-color: rgba(129,140,248,0.9);
+}
+
+
+.drake-card { border-color: #3b82f6; }
+.kendrick-card { border-color: #fb923c; }
+.travis-card { border-color: #ec4899; }
+.wayne-card { border-color: #34d399; }
+.nicki-card { border-color: #f43f5e; }
+
+
+.rap-page .footer {
+    background: #020617;
+    border-top: 1px solid rgba(75,85,99,0.6);
+}
+
+.rap-box {
+    background: white;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-size: 14px;
+}
+
+.rap-extra {
+    max-width: 950px;
+    margin: 10px auto 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    padding: 0 15px;
+}
+
+.rap-card {
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.75);
+    border: 1px solid rgba(75,85,99,0.7);
+    font-size: 14px;
+    transition: 0.18s ease;
+}
+
+.rap-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #e5e7eb;
+}
+
+.rap-card p {
+    margin: 0;
+    color: #cbd5f5;
+}
+
+.rap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.9);
+    border-color: rgba(129,140,248,0.9);
+}
+
+
+.rap-quote {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rap-quote-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 18px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.rap-quote-text {
+    flex: 1;
+}
+
+.quote {
+    font-size: 15px;
+    font-style: italic;
+    margin: 0 0 6px 0;
+    color: #e5e7eb;
+}
+
+.quote-name {
+    margin: 0;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+
+@media (max-width: 600px) {
+    .rap-quote {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rap-quote-img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .rap-intro {
+        grid-template-columns: 1fr;
+    }
+}
+
+.artist-top {
+    max-width: 950px;
+    margin: 28px auto 18px auto;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #22c1c3, #4c1d95);
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.artist-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 22px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #e5e7eb;
+}
+
+.artist-text h1 {
+    margin: 0 0 6px 0;
+    font-size: 30px;
+}
+
+.artist-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+.artist-main {
+    max-width: 950px;
+    margin: 10px auto 24px auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 18px;
+    padding: 0 15px;
+}
+
+.artist-about,
+.artist-facts {
+    background: rgba(15,23,42,0.9);
+    border-radius: 16px;
+    padding: 16px 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.65);
+    border: 1px solid rgba(75,85,99,0.7);
+    font-size: 14px;
+}
+
+.artist-about h2,
+.artist-facts h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.artist-facts ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.song-list {
+    max-width: 950px;
+    margin: 0 auto 40px auto;
+    background: rgba(15,23,42,0.9);
+    border-radius: 16px;
+    padding: 16px 18px 18px 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.65);
+    border: 1px solid rgba(75,85,99,0.7);
+    font-size: 14px;
+}
+
+.song-list h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.song-list ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+@media (max-width: 750px) {
+    .artist-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artist-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .artist-main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.spotify-btn {
+    margin-top: 12px;
+    display: inline-block;
+    background: #1DB954;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+
+.spotify-btn:hover {
+    background: #17a24a;
+    transform: scale(1.05);
+}
+
+/* Kendrick page colour theme */
+.kendrick-top {
+    background: linear-gradient(135deg, #f59e0b, #7c2d12);
+}
+
+/* Travis Scott colour theme */
+.travis-top {
+    background: linear-gradient(135deg, #ec4899, #7e22ce);
+}
+
+/* Lil Wayne colour theme */
+.wayne-top {
+    background: linear-gradient(135deg, #34d399, #065f46);
+}
+
+/* Nicki Minaj colour theme */
+.nicki-top {
+    background: linear-gradient(135deg, #f472b6, #db2777);
+}
+
+/*udits references*/
+/*https://www.w3schools.com/css/*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS*/
+/*https://css-tricks.com*/
+/*https://fonts.google.com*/
+/*https://codepen.io*/
+
+
+/* Gabrielaaaaaaaaaaaaaaaa Georgievaaaaaaaaaaaaaaaaa */
+html, body, head {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+body.classical-body {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.classical-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(46,43,39,0.85), rgba(46,43,39,0.85)), url(images/classic.jpg) center/cover no-repeat;
+    color: #f0c978; 
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-top: 4px solid #ab893e;
+    border-bottom: 4px solid #ab893e;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.classical-title::before,
+.classical-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f0c978;
+    box-shadow: 0 0 10px #f0c978;
+}
+.classical-title::before { top: 0; }
+.classical-title::after { bottom: 0; }
+
+.classical-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.classical-content h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    color: #884c07;
+    border-bottom: 2px solid #c9b281;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.classical-content h2:hover {
+    color: #c5b06c;
+}
+
+.classical-content p {
+    margin: 15px 0;
+    font-size: 1.15em;
+    font-family: 'Georgia', serif !important;
+}
+
+.classical-separator {
+    width: 60px;
+    height: 2px;
+    background-color: #b48e41;
+    margin: 25px 0;
+}
+.classical-background {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+body.classical-background.mp-musician-page.mp-mozart-page {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+       
+}
+
+.mp-content.mp-flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+.mp-main-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(46,43,39,0.85), rgba(46,43,39,0.85)), url(images/classic.jpg) center/cover no-repeat;
+    color: #f0c978; 
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-top: 4px solid #ab893e;
+    border-bottom: 4px solid #ab893e;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.mp-main-title::before,
+.mp-main-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f0c978;
+    box-shadow: 0 0 10px #f0c978;
+}
+.mp-main-title::before { top: 0; }
+.mp-main-title::after { bottom: 0; }
+
+.mp-text-block {
+    flex: 1;
+}
+
+.mp-subtitle {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #884c07;
+    border-bottom: 2px solid #eb880f;
+    padding-bottom: 5px;
+     font-family: 'Georgia', serif;
+}
+
+.mp-text-block p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+     font-family: 'Georgia', serif;
+}
+
+.mp-image {
+    width: 300px;
+    margin: 20px;
+}
+
+.mp-float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.mp-float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.mp-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.mp-image figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color:  #884c07;
+    margin-top: 5px;
+}
+
+.mp-list {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.mp-list li {
+    margin-bottom: 10px;
+}
+body.classical-background.bp-musician-page.bp-beethoven-page {
+    font-family: 'Georgia', serif;   
+    background-color: #f5f2e7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.bp-content.bp-flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #fff;          
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.bp-main-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(46,43,39,0.85), rgba(46,43,39,0.85)), url(images/classic.jpg) center/cover no-repeat;
+    color: #f0c978; 
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-top: 4px solid #ab893e;
+    border-bottom: 4px solid #ab893e;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.bp-main-title::before,
+.bp-main-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f0c978;
+    box-shadow: 0 0 10px #f0c978;
+}
+.bp-main-title::before { top: 0; }
+.bp-main-title::after { bottom: 0; }
+
+.bp-text-block {
+    flex: 1;
+}
+
+.bp-subtitle {
+    font-size: 1.8em;               
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #884c07;                 
+    border-bottom: 2px solid #eb880f; 
+    padding-bottom: 5px;
+}
+
+
+.bp-text-block p {
+  font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.bp-image {
+    width: 300px;
+    margin: 20px;
+}
+
+.bp-float-right {
+    float: right;
+    margin-left: 20px;
+    size: 50%;
+}
+
+.bp-float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.bp-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.bp-image figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color:  #884c07;
+    margin-top: 5px;
+}
+
+.bp-list {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.bp-list li {
+    margin-bottom: 10px;
+}
+
+.classical-music-footer-nav {
+    background: #2e2b27;
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 4px solid #ab893e;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.classical-music-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.classical-music-footer-links li a {
+    color: #f5e9ce;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Georgia', serif;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.classical-music-footer-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #eb880f;
+    transition: width 0.3s ease;
+    border-radius: 3px;
+}
+
+.classical-music-footer-links li a:hover {
+    color: #eb880f;
+}
+
+.classical-music-footer-links li a:hover::after {
+    width: 100%;
+}
+
+.classical-music-footer-note {
+    color: #d8cbb0;
+    font-size: 0.9em;
+    font-family: 'Georgia', serif;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+
+body.classical-background.musician-page.chopin-page {
+    font-family: 'Georgia', serif;   
+    background-color: #f5f2e7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.chopin-content.chopin-flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #fff;         
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.chopin-main-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(46,43,39,0.85), rgba(46,43,39,0.85)), url(images/classic.jpg) center/cover no-repeat;
+    color: #f0c978; 
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-top: 4px solid #ab893e;
+    border-bottom: 4px solid #ab893e;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.chopin-main-title::before,
+.chopin-main-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f0c978;
+    box-shadow: 0 0 10px #f0c978;
+}
+.chopin-main-title::before { top: 0; }
+.chopin-main-title::after { bottom: 0; }
+.chopin-text-block {
+    flex: 1;
+}
+
+.chopin-subtitle {
+    font-size: 1.8em;                
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #884c07;                 
+    border-bottom: 2px solid #eb880f; 
+    padding-bottom: 5px;
+}
+.chopin-text-block p {
+  font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.chopin-image {
+    width: 300px;
+    margin: 20px;
+}
+
+.chopin-float-right {
+    float: right;
+    margin-left: 20px;
+    size: 50%;
+}
+
+.chopin-float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.chopin-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.chopin-image figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color:  #884c07;
+    margin-top: 5px;
+}
+
+.chopin-list {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.chopin-list li {
+    margin-bottom: 10px;
+}
+
+body.classical-background.musician-page.bach-page {
+    font-family: 'Georgia', serif;   
+    background-color: #f5f2e7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.bach-content.bach-flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #fff;          
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.bach-main-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(46,43,39,0.85), rgba(46,43,39,0.85)), url(images/classic.jpg) center/cover no-repeat;
+    color: #f0c978; 
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-top: 4px solid #ab893e;
+    border-bottom: 4px solid #ab893e;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.bach-main-title::before,
+.bach-main-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #f0c978;
+    box-shadow: 0 0 10px #f0c978;
+}
+.bach-main-title::before { top: 0; }
+.bach-main-title::after { bottom: 0; }
+
+.bach-text-block {
+    flex: 1;
+}
+
+.bach-subtitle {
+    font-size: 1.8em;               
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #884c07;                  
+    border-bottom: 2px solid #eb880f; 
+    padding-bottom: 5px;
+}
+
+
+.bach-text-block p {
+  font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.bach-image {
+    width: 300px;
+    margin: 20px;
+}
+
+.bach-float-right {
+    float: right;
+    margin-left: 20px;
+    size: 50%;
+}
+
+.bach-float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.bach-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.bach-image figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color:  #884c07;
+    margin-top: 5px;
+}
+
+.bach-list {
+    list-style-type: disc;
+    margin-left: 40px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.bach-list li {
+    margin-bottom: 10px;
+}
+/* Gabrielaaaaaaaaaaaaaaaa Georgievaaaaaaaaaaaaaaaaa */
+
+/*Tamzin*/
+
+
+.pop-page {
+    margin: 0;
+    font-family: 'Poppins', Bahnschrift, Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef, #fcb1f2);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* nav on pop pages */
+.pop-page nav {
+    background: linear-gradient(90deg, #ff5f7e, #ff8ba7);
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.pop-page nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.pop-page nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.pop-page nav a:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+/* header on pop pages */
+.pop-page .pop-header {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.pop-page .pop-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.pop-page .pop-header p {
+    font-size: 1.3rem;
+}
+
+/* sections on pop pages */
+.pop-page section,
+.pop-page .pop-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.pop-page section h1,
+.pop-page .pop-content h1 {
+    font-size: 2.5rem;
+    color: #ff4f78;
+    text-align: center;
+}
+
+.pop-page section h2,
+.pop-page .pop-content h2 {
+    margin-top: 25px;
+    color: #d6336c;
+}
+
+.pop-page section h3,
+.pop-page .pop-content h3 {
+    margin-top: 25px;
+    color: #d6336c;
+}
+
+
+/*aisling*/
+:root{
+
+  --bg-1: #13070b;       
+  --bg-2: #481f37;      
+  --accent-blue: #2baaff;
+  --accent-pink: #ff66b2;
+  --muted: #bdb6c9;      
+  --white: #ffffff;
+  --card-bg: rgba(255,255,255,0.03);
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --max-width: 1100px;
+  --gap: 18px;
+}
+
+* { box-sizing: border-box; }
+/* R&B PAGES ONLY */
+
+/* apply background + base font only when body has rnb-page */
+body.rnb-page {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg-1) 60%);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* layout wrapper */
+.rnb-page .page {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 24px;
+}
+
+/* top bar */
+.rnb-page .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.rnb-page .topbar h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(43, 140, 255, 0.08);
+}
+
+/* info boxes */
+.rnb-page .description-box {
+  background: linear-gradient(90deg, rgba(43,140,255,0.06), rgba(255,102,178,0.03));
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.04);
+  margin-bottom: 22px;
+}
+
+.rnb-page .description-box h2 {
+  margin: 0 0 8px 0;
+  color: var(--white);
+}
+
+.rnb-page .description-box p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* gallery of artist cards */
+.rnb-page .gallery {
+  display: flex;
+  gap: var(--gap);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* each artist */
+.rnb-page .artist-card {
+  display: block;
+  position: relative;
+  width: calc((100% - (3 * var(--gap))) / 4);
+  min-width: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card-bg);
+  transition: transform .28s ease, box-shadow .28s ease;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.rnb-page .artist-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.98) contrast(0.95);
+}
+
+.rnb-page .artist-card .artist-overlay {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.45), rgba(43,140,255,0.06));
+  padding: 8px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+
+.rnb-page .artist-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--white);
+}
+
+/* hover */
+.rnb-page .artist-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 50px rgba(43,140,255,0.06);
+}
+
+/* footer */
+.rnb-page .site-footer {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  gap: 12px;
+}
+
+.rnb-page .footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.rnb-page .footer-links a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* artist detail pages (inside rnb) */
+.rnb-page.artist-page .container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.rnb-page.artist-page .text-area {
+  flex: 1 1 480px;
+  min-width: 260px;
+}
+
+.rnb-page.artist-page .image-area {
+  width: 320px;
+  flex: 0 0 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.rnb-page.artist-page .image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* main heading on artist pages */
+.rnb-page .artist-title {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+
+.rnb-page .artist-sub {
+  color: var(--muted);
+  margin: 0 0 12px 0;
+}
+
+/* text bar */
+.rnb-page .text-bar {
+  margin-top: 14px;
+  padding: 12px;
+  background: linear-gradient(90deg, rgba(255,102,178,0.02), rgba(43,140,255,0.02));
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
+  color: var(--muted);
+}
+
+/* video area */
+.rnb-page .video-wrap {
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.18);
+  padding: 8px;
+}
+
+.rnb-page .video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.rnb-page .video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+  .rnb-page .artist-card {
+    width: calc((100% - var(--gap)) / 2);
+  }
+
+  .rnb-page .artist-card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rnb-page .page {
+    margin: 20px;
+    padding: 12px;
+  }
+
+  .rnb-page .artist-card {
+    width: 100%;
+  }
+
+  .rnb-page .artist-card img {
+    height: 200px;
+  }
+
+  .rnb-page.artist-page .container {
+    flex-direction: column-reverse;
+  }
+
+  .rnb-page.artist-page .image-area {
+    width: 100%;
+    max-height: 320px;
+  }
+}
+
+
+/*https://www.htmlbestcodes.com/index-6.htm */
+/*https://css-tricks.com/*
+/*https://www.w3schools.com/css/*
+/*https://www.w3schools.com/html/*
+/*S*/
+
+/*conor*/
+html,
+.j-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;        /* so page can grow and scroll */
+    overflow-x: hidden;       /* keep horizontal hidden only */
+    background-image: url("images/must-be-another-jazz-background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.j-header {
+    background-color: #000000;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+.j-header-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.j-header-content div { 
+    text-align: center; 
+}
+
+.j-header-title p {
+    margin: auto;
+    margin-left: 20px;
+    padding: 0;
+    font-size: 50px;
+    border-style: solid;
+    border-color: #cead31;
+}
+
+.j-main-title h1 {
+    display: flex;
+    font-size: 160px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #000000;
+    border: #cead31 solid;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.jazz-nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: fit-content;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   border:#cead31 solid;
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   font-size: 25px;
+}
+
+.j-main {
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.j-main-image {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.j-main-image div {
+    margin-top: 10px;
+    margin: 10px;
+    width: 250px;
+    align-items: center;
+
+    
+}
+
+.j-main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #0000008c;
+    border: #cead31 solid;
+}
+
+.j-section {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    
+}
+
+
+.j-main-image img  {
+    border: white solid;
+    width: 100%; 
+    height: auto;
+}
+
+
+
+
+
+.j-footer p {
+    display: flex;
+    background-color: tomato;
+    color: #000000;
+    height: max-content;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px
+}
+
+/* Smooth jazz page css*/
+
+.sj-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(images/sj-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.sj-main {
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sj-main-title h1 {
+    
+    font-size: 160px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #000000;
+    border: rgb(153, 109, 255) solid; 
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+.sj-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #0000008c;
+    border: rgb(153, 109, 255) solid; 
+
+}
+
+.sj-section {
+    max-width: 80vh;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
+
+
+.sj-aside {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.sj-aside div {
+    max-width: 450px;
+    background-color: rgb(169, 163, 253);
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(153, 109, 255);
+    margin: 15px;
+    text-align: center;
+    max-height: fit-content;
+}
+
+
+
+.sj-aside img {
+    border: solid white;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.sj-footer p {
+    display: flex;
+    background-color: rgb(153, 109, 255);
+    color: #000000;
+    height: max-content;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+
+}
+
+.sj-jazz-nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: fit-content;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   border: solid rgb(153, 109, 255);
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   font-size: 25px;
+}
+
+
+.sj-header-title p {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    font-size: 50px;
+    border:  rgb(153, 109, 255) solid;
+}
+
+/* Bossa Nova page css */
+
+.bn-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(images/bossa-nova-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bn-main {
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bn-main-title h1 {
+    font-size: 160px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #000000;
+    border: rgb(235, 98, 7) solid; 
+    max-width: fit-content;
+}
+
+.bn-jazz-nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: fit-content;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   border:  rgb(81, 160, 7) solid;
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   font-size: 25px;
+}
+
+.bn-main-content {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #0000008c;
+    border: rgb(235, 7, 7) solid;
+    
+}
+
+.bn-section {
+    max-width: 100vh;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+
+
+.bn-aside {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.bn-aside div {
+    max-width: 350px;
+    background-color: rgb(114, 51, 9);
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(255, 89, 241);
+    margin: 15px;
+    text-align: center;
+    max-height: fit-content;
+}
+
+.bn-aside li {
+    margin: 10px;
+}
+
+
+.bn-aside img {
+    border: solid rgb(255, 89, 241);
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.bn-header-title p {
+    margin: auto;
+    margin-left: 20px;
+    padding: 0;
+    font-size: 50px;
+    border: rgb(23, 12, 121) solid;
+}
+
+.bn-footer p {
+    display: flex;
+    background-color: rgb(255, 251, 0);
+    color: #000000;
+    height: max-content;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+
+
+}
+/*bebop page css */
+
+.bb-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(images/bebop-background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+
+.bb-main-title h1 {
+    font-size: 160px;
+    text-align: center;
+    color: rgb(242, 255, 166);
+    margin: auto;
+    margin-top: 10px;
+    background-color: #000000;
+    border: rgb(37, 73, 62) solid; 
+    max-width: fit-content;
+}
+
+.bb-jazz-nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: fit-content;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   border:  rgb(37, 73, 62) solid;
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   font-size: 25px;
+}
+
+.bb-main-content {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #0000008c;
+    border: rgb(37, 73, 62) solid;
+
+}
+
+.bb-section {
+    max-width: 100vh;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+
+
+.bb-aside {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.bb-aside div {
+    max-width: 350px;
+    background-color: rgb(37, 73, 62);
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(11, 143, 121);
+    margin: 15px;
+    text-align: center;
+    max-height: fit-content;
+}
+
+.bb-aside li {
+    margin: 10px;
+}
+
+
+.bb-aside img {
+    border: solid rgb(11, 143, 121);
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.bb-header-title h1 {
+    margin: auto;
+    margin-left: 20px;
+    padding: 0;
+    font-size: 50px;
+    border: rgb(37, 73, 62) solid;
+}
+
+.bb-footer p {
+    background-color: rgb(11, 143, 121);
+    color: #000000;
+    height: max-content;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+}
+
+.bb-jazz-nav a{
+    color: rgb(242, 255, 166);
+}
+
+/*jazz fusion page css */
+
+
+.jf-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(images/Jazz-fusion-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+
+.jf-main-title h1 {
+    font-size: 160px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 10px;
+    background-color: #000000;
+    border: rgb(88, 255, 158) solid; 
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+
+.jf-section {
+    max-width: 80vh;
+    flex-wrap: wrap;
+    margin: 30px;
+
+}
+
+
+
+.jf-aside {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.jf-aside div {
+    max-width: 420px;
+    background-color: rgb(138, 221, 172);
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(88, 255, 158);
+    margin: 15px;
+    text-align: center;
+    max-height: fit-content;
+}
+
+
+
+.jf-aside img {
+    border: solid white;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.jf-jazz-nav {
+   display: flex;
+   justify-content: space-between;
+   max-width: fit-content;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   border: rgb(88, 255, 158) solid;
+   padding: 10px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+   font-size: 25px;
+}
+
+.jf-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    background-color: #0000008c;
+    border: rgb(88, 255, 158) solid;
+}
+
+.jf-header-title h1 {
+    margin: auto;
+    margin-left: 20px;
+    padding: 0;
+    font-size: 50px;
+    border: rgb(88, 255, 158) solid;
+}
+
+.jf-footer p {
+
+    background-color: #6d2748;
+    color: #000000;
+    height: max-content;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    margin-top: auto;
+
+
+
+}
